@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+    <include android:id="@+id/app_bar" layout="@layout/app_bar"/>
+    <fragment class="com.dev.pro.noob.rb.gettweeties.OpeningFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/mainfragment"
+              android:layout_below="@+id/app_bar"
+              android:layout_alignParentTop="true"
+              android:name="android.support.v4.app.ListFragment"
+              tools:layout="@android:layout/list_content"/>
+</RelativeLayout>
